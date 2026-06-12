@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroAlerta - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌱 AgroAlerta</h1>
+        <p>Conectando a comunidade agrícola</p>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <div class="card">
+                <h3>Clima Atual</h3>
+                <p id="clima">Carregando...</p>
+            </div>
+            <div class="card alerta">
+                <h3>Alerta de Pragas</h3>
+                <p>⚠️ Atenção na região Norte</p>
+            </div>
+        </section>
+
+        <section class="formulario">
+            <h2>Relatar Nova Praga</h2>
+            <form id="form-alerta">
+                <label for="cultura">Cultura (Ex: Milho, Soja):</label>
+                <input type="text" id="cultura" required>
+
+                <label for="descricao">O que você observou?</label>
+                <textarea id="descricao" required></textarea>
+
+                <button type="submit">Enviar Alerta</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
